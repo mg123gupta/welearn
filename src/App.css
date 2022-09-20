@@ -1,0 +1,245 @@
+
+/* .custom-shape-divider-top-1635399585 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1635399585 svg {
+  position: relative;
+  display: block;
+  width: calc(169% + 1.3px);
+  height: 204px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1635399585 .shape-fill {
+  fill: orange;
+} */
+
+/* #menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+} */
+
+
+/* #menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+   */
+  /* opacity: 0; /* hide this */
+  /* z-index: 2; and place it over the hamburger
+  
+  -webkit-touch-callout: none;
+/* } */  
+
+/*
+ * Just a quick hamburger
+ */
+/* #menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background:black;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+} */
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+/* #menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+} */
+
+/*
+ * But let's hide the middle one.
+ */
+/* #menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+} */
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+/* #menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+} */
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+/* #menu
+{
+  position: absolute;
+  width: 210px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ffff;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased; */
+  /* to stop flickering of text in safari */
+  
+  /* transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+} */
+
+/*
+ * And let's slide it in from the left
+ */
+/* #menuToggle input:checked ~ ul
+{
+  transform: none;
+} */
+
+
+
+
+/* body{
+  background:rgb(204, 204, 204);
+} */
+/* .main {
+  font-family:Arial;
+  width:100vx;
+  display:block;
+  margin:0 auto;
+}
+h3 {
+    font-size: 16px;
+    margin: 10px;
+    position: relative;
+    text-align: center;
+}
+ */
+
+ @keyframes tutorpic{
+	 0%{ background-image: url("./images/tutor1.jpg"); background-size: cover; background-repeat: no-repeat;}
+	 50%{ background-image: url("./images/tutor2.jpg");background-size: cover;}
+	 100%{background-image: url("./images/tutor3.jpg");background-size: cover;}
+
+ }
+ .tutorpic{
+	 
+	 animation-name: tutorpic;
+	 animation-duration: 10s;
+	 animation-iteration-count: infinite;
+	 /* animation-timing-function: ease; */
+
+
+ }
+ .flags{
+	 animation-name: flags;
+	 animation-duration: 10s;
+	 animation-iteration-count: infinite;
+	 animation-timing-function: ease;
+ }
+ @keyframes flags{
+	 0%{background-image: url("./images/flag1.png");background-size: cover; background-repeat: no-repeat;}
+	 50%{background-image: url("./images/flag2.svg"); background-size: cover; background-repeat: no-repeat;}
+	 100%{background-image: url("./images/flag1.png"); background-size: cover; background-repeat: no-repeat;}
+ }
+
+.nameheading::after{
+	content:"";
+	animation-name: nameheading;
+	animation-duration: 10s;
+	 animation-iteration-count: infinite;
+	 /* 
+	 animation-timing-function: linear; */
+	 transition: all;
+
+}
+
+
+@keyframes nameheading{
+	0%{content: "George C.";}
+	50%{content: "Christina P.";}
+	100%{content: "Sara D.";}
+}
+.para::before{
+	content: "";
+	animation-name: para ;
+	animation-duration: 10s;
+	 animation-iteration-count: infinite;
+}
+@keyframes para{
+	0%{content: "Airline Pilot.";}
+	50%{content: "Digital Marketer";}
+	100%{content: "Certified IELTS Tutor";}
+
+}
+
+/* <svg viewBox="0 0 1467 550" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity: 0; margin-left: 2vw; position: absolute; top: 0px; width: calc(800px + 30%); height: auto; transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; visibility: hidden;"><rect width="1467" height="550" fill="none"></rect><path d="M279 286C226 98.5 117 35.5 5.5 0H1353.5C1342.17 22.5 1277 121.5 1168 110.5C1059 99.5 986.421 106.231 931.5 266C876.5 426 751.5 524.5 624 541.5C496.5 558.5 331.629 472.187 279 286Z" fill="#FDBBB8"></path><path d="M283.5 261.5C208.5 75.5 158.5 20.5 114.5 0H1340.5C1329.17 22.5 1281 68 1172 57C1063 46 983.921 101.731 929 261.5C874 421.5 771 471.5 643.5 488.5C516 505.5 355.856 440.943 283.5 261.5Z" fill="#FF614F"></path></svg>
+<svg viewBox="0 0 1467 550" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity: 0; margin-left: 2vw; position: absolute; top: 0px; width: calc(800px + 30%); height: auto; transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; visibility: hidden;"><rect width="1467" height="550" fill="none"></rect><path d="M279 286C226 98.5 117 35.5 5.5 0H1353.5C1342.17 22.5 1277 121.5 1168 110.5C1059 99.5 986.421 106.231 931.5 266C876.5 426 751.5 524.5 624 541.5C496.5 558.5 331.629 472.187 279 286Z" fill="#FFEAB2"></path><path d="M283.5 261.5C208.5 75.5 158.5 20.5 114.5 0H1340.5C1329.17 22.5 1281 68 1172 57C1063 46 983.921 101.731 929 261.5C874 421.5 771 471.5 643.5 488.5C516 505.5 355.856 440.943 283.5 261.5Z" fill="#FFC929"></path></svg>
+<svg viewBox="0 0 1467 550" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity: 0; margin-left: 2vw; position: absolute; top: 0px; width: calc(800px + 30%); height: auto; transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; visibility: hidden;"><rect width="1467" height="550" fill="none"></rect><path d="M279 286C226 98.5 117 35.5 5.5 0H1353.5C1342.17 22.5 1277 121.5 1168 110.5C1059 99.5 986.421 106.231 931.5 266C876.5 426 751.5 524.5 624 541.5C496.5 558.5 331.629 472.187 279 286Z" fill="#94D6DA"></path><path d="M283.5 261.5C208.5 75.5 158.5 20.5 114.5 0H1340.5C1329.17 22.5 1281 68 1172 57C1063 46 983.921 101.731 929 261.5C874 421.5 771 471.5 643.5 488.5C516 505.5 355.856 440.943 283.5 261.5Z" fill="#54bac4"></path></svg> */
